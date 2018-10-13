@@ -10,15 +10,15 @@ import {HeroService} from '../hero.service';
   styleUrls: ['./heros.component.css']
 })
 export class HerosComponent implements OnInit {
-  hero: Hero = {
-    id: 1,
-    name: 'WindStrom'
-  };
-  selectedHero: Hero;
+    // hero: Hero = {
+  //   id: 1,
+  //   name: 'WindStrom'
+  // };
+  // selectedHero: Hero;
   heroes: Hero[];
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-  }
+  // onSelect(hero: Hero): void {
+  //   this.selectedHero = hero;
+  // }
   constructor(private heroServices: HeroService) { }
   getHeroes(): void {
     this.heroServices.getHeroes() .subscribe( heroes =>  this.heroes = heroes);
