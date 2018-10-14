@@ -11,9 +11,9 @@ const routes: Routes = [
   {path: 'heroes', component: HerosComponent}
 ];
 
-@NgModule({
- exports: [RouterModule],
+@NgModule({ 
  imports: [ RouterModule.forRoot(routes) ],
+ exports: [RouterModule]
 })
 
 export class AppRoutingModule {}
